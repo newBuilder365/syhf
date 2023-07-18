@@ -4,8 +4,8 @@ const title = 'syhf';
 
 export default defineConfig({
   title,
-  base: `/${title}/`,
-  publicPath: `/${title}/`,
+  // base: `/${title}/`,
+  // publicPath: `/${title}/`,
   outputPath: 'docs-dist',
   themeConfig: {
     name: 'syhf',

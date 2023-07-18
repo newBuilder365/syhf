@@ -1,5 +1,5 @@
 {
-  "name": "syhf",
+  "name": "@sy-projects/syhf",
   "version": "0.0.2",
   "description": "合肥公司组件库",
   "module": "dist/index.js",
@@ -17,14 +17,16 @@
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
     "prepublishOnly": "father doctor && npm run build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "deploy": "npm run docs:build && npm run docs:deploy"
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "pub": "npm run build&& npm version patch&& npm publish"
   },
   "authors": [
     "xxy"
   ],
   "license": "MIT",
   "files": [
-    "dist"
+    "dist",
+    "lib"
   ],
   "commitlint": {
     "extends": [
